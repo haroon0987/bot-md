@@ -703,7 +703,7 @@ const oldSudo = config.SUDO?.split(",")
         if (!(await isAdmin(message,message.sender))) {
         var usr = message.sender.includes(":") ? message.sender.split(":")[0]+"@s.whatsapp.net" : message.sender
         await message.client.sendMessage(message.jid, { delete: message.data.key })
-        await message.sendReply("_Dafa ho jaooo 😂😉_");
+        await message.sendReply("*_Link send krny ka buhat sukria sanam\n Baki ab dafa ho jaooo 😂😉_*");
         await message.client.groupParticipantsUpdate(message.jid, [usr], "remove")
         }
         }
